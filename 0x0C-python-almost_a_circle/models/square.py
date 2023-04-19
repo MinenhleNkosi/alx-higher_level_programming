@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Module square
-This class Square that inherits from Rectangle
+"""Module square.
+Create a Square class, inheriting from Rectangle.
 """
 
 from models.base import Base
@@ -8,14 +8,13 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """This is a class describing a square
-    
+    """Class describing a square.
     Public instance methods:
         - area()
         - display()
         - to_dictionary()
         - update()
-        All inherit from Rectangle.
+    Inherits from Rectangle.
     """
 
     def __init__(self, size, x=0, y=0, id=None):
