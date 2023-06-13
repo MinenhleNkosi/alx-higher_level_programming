@@ -1,8 +1,10 @@
 #!/usr/bin/node
-// a script that prints the addition of 2 integers
-
+const first = parseInt(process.argv[2]);
+const second = parseInt(process.argv[3]);
 function add (a, b) {
-  return parseInt(a) + parseInt(b);
+    if (isNaN(a) || isNaN(b)) {
+	return NaN;
+    }
+    return a + b;
 }
-
-console.log(add(process.argv[2], process.argv[3]));
+console.log(add(first, second));
